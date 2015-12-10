@@ -7,3 +7,6 @@ Uses:
 * Mocha
 * unitJS
 
+To use:
+* (in Terminal) node index.js
+* (in Terminal) mocha test 
