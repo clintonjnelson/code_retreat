@@ -1,0 +1,20 @@
+{
+  "name": "code_retreat_12_11_2015",
+  "version": "1.0.0",
+  "description": "for the friday code retreat at expedia",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "unit.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC"
+}
