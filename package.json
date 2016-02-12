@@ -1,20 +1,19 @@
 {
-  "name": "code_retreat_12_11_2015",
-  "version": "1.0.0",
-  "description": "for the friday code retreat at expedia",
+  "name": "code_retreat",
+  "version": "0.0.1",
+  "description": "Expedia code retreat base code. Code inspired by https://github.com/MJGrant/Very-Basic-Node-JS-Project-With-Unit-Tests",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-    "unit.js": "^2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "^3.5.0",
     "mocha": "^2.3.4"
   },
   "scripts": {
     "test": "mocha test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

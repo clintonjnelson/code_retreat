@@ -1,14 +1,13 @@
-# Very simple JS project with unit tests
-Just a basic project structure for future reference. 
+# Simple JS project for use with coding retreat
 
 Uses:
 * JavaScript
-* node
+* Node
 * Mocha
-* unitJS
+* Chai
 
 To use:
 * Clone this repo
 * In the project's directory, run npm install
-* (in Terminal) node index.js
-* (in Terminal) mocha test 
+* To run index.js script: $ node index.js
+* To run tests: $ mocha test

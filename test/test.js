@@ -1,36 +1,29 @@
-/**
- * Created by magrant on 12/9/15.
- */
+'use strict';
+// mocha-chai tests
 
-//test framework http://unitjs.com/
-//run in terminal with mocha test
-
-var test = require('unit.js');
+// var test = require('unit.js');
+var chai     = require('chai');
+var expect   = chai.expect;
 var session1 = require('../js/session1.js');
 
-describe('Basic type checks', function() {
-    it('Confirm this is a string', function() {
-        var example = 'hello world';
-
-        test.string(example)
+describe('Session1', function() {
+  describe("Say Hello", function() {
+    it("returns a string", function() {
+      expect(session1.getHello()).to.be.a('string');
     });
-
-    it('Confirm this is a number', function() {
-        var example = 1;
-
-        test.number(example)
+    it("returns 'hello'", function() {
+      expect(session1.getHello()).to.equal('hello');
     });
-});
+  })
 
-describe('Session 1 method tests', function() {
-    it("returns a string hello", function() {
-
-        test.string(session1.sayHello());
+  describe("Add", function() {
+    it("returns a number", function() {
+      var sum = session1.add(6, 6);
+      expect(sum).to.be.a('number');
     });
-
-    it("returns the number 12", function() {
-
-        var num = session1.addTheseNumbers(6, 6);
-        test.assert(num === 12);
+    it("returns a the sum of the two inputs", function() {
+      var sum = session1.add(6, 6);
+      expect(sum).to.equal(12)
     });
+  });
 });

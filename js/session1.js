@@ -1,12 +1,12 @@
-/**
- * Created by magrant on 12/9/15.
- */
+'use strict';
+
+
 module.exports = {
-    sayHello: function() {
-        return "HELLO";
+    getHello: function() {
+        return "hello";
     },
 
-    addTheseNumbers: function(x, y) {
+    add: function(x, y) {
       return x + y;
     }
 
